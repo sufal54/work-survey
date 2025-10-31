@@ -54,7 +54,7 @@ export default function Survey() {
   useEffect(() => {
     if (existingResponse && (existingResponse as any).answers) {
       setAnswers((existingResponse as any).answers);
-      
+
       // Check if already completed
       if ((existingResponse as any).isComplete) {
         setShowAlreadySubmitted(true);
@@ -103,10 +103,10 @@ export default function Survey() {
   );
 
   const totalAnswered = Object.keys(answers).length;
-  const progressPercentage = (totalAnswered / 50) * 100;
+  const progressPercentage = (totalAnswered / 51) * 100;
   const sectionAnswered = currentSectionQuestions.filter(q => answers[q.id.toString()]).length;
   const isSectionComplete = sectionAnswered === currentSectionQuestions.length;
-  const isAllComplete = totalAnswered === 50;
+  const isAllComplete = totalAnswered === 51;
 
   const handleAnswerChange = (questionId: number, answer: SurveyAnswer) => {
     setAnswers(prev => ({
@@ -137,7 +137,7 @@ export default function Survey() {
     if (!isAllComplete) {
       toast({
         title: "Incomplete Survey",
-        description: `Please answer all questions before submitting. ${50 - totalAnswered} questions remaining.`,
+        description: `Please answer all questions before submitting. ${51 - totalAnswered} questions remaining.`,
         variant: "destructive",
       });
       return;
@@ -154,9 +154,9 @@ export default function Survey() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-3">
-            <img 
-              src={logoPath} 
-              alt="Excellent Place to Work" 
+            <img
+              src={logoPath}
+              alt="Excellent Place to Work"
               className="h-10 md:h-12 w-auto object-contain"
               data-testid="img-logo-header"
             />
@@ -184,7 +184,7 @@ export default function Survey() {
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <p className="text-sm font-medium" data-testid="text-progress">
-                Question {totalAnswered} of 50 completed
+                Question {totalAnswered} of 51 completed
               </p>
               <p className="text-sm text-muted-foreground">{Math.round(progressPercentage)}%</p>
             </div>
@@ -194,7 +194,7 @@ export default function Survey() {
                 const sectionQuestions = surveyQuestions.filter(q => q.sectionLetter === section.letter);
                 const sectionAnswers = sectionQuestions.filter(q => answers[q.id.toString()]).length;
                 const isComplete = sectionAnswers === section.questions;
-                
+
                 return (
                   <Button
                     key={section.letter}
@@ -243,7 +243,7 @@ export default function Survey() {
               </CardContent>
             </Card>
           )}
-          
+
           <div className="mb-8">
             <div className="flex items-center gap-3 mb-2">
               <Badge variant="outline" className="text-base px-3 py-1">
@@ -261,7 +261,7 @@ export default function Survey() {
           <div className="space-y-6">
             {currentSectionQuestions.map((question) => {
               const answer = answers[question.id.toString()];
-              
+
               return (
                 <Card key={question.id} className="p-6 md:p-8 shadow-lg" data-testid={`card-question-${question.id}`}>
                   <div className="space-y-4">
@@ -273,7 +273,7 @@ export default function Survey() {
                         {question.text}
                       </p>
                     </div>
-                    
+
                     <div className="flex flex-col sm:flex-row gap-2 pt-2">
                       {answerOptions.map((option) => (
                         <Button

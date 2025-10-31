@@ -17,19 +17,19 @@ export const surveyQuestions: SurveyQuestion[] = [
   { id: 8, text: "Leaders act with honesty and integrity.", section: "Leadership & Vision", sectionLetter: "A" },
   { id: 9, text: "Employees are encouraged to participate in decision-making processes.", section: "Leadership & Vision", sectionLetter: "A" },
   { id: 10, text: "I feel confident in the direction our organization is headed.", section: "Leadership & Vision", sectionLetter: "A" },
-  
+
   // Section B: Employee Wellbeing & Happiness (10 questions)
   { id: 11, text: "My work environment supports a healthy work-life balance.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 12, text: "I am satisfied with the physical and mental wellness initiatives offered.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
-  { id: 13, text: "My workload is manageable and reasonable.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
+  { id: 13, text: "Stress is effectively managed within my team or department.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 14, text: "I feel comfortable taking time off when I need to.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 15, text: "The organization cares about my personal wellbeing.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 16, text: "I have access to the tools and resources I need to do my job well.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 17, text: "I feel safe (physically and psychologically) in my workplace.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
-  { id: 18, text: "Stress is effectively managed within my team or department.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
+  { id: 18, text: "I receive feedback that helps me improve my performance..", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 19, text: "I am encouraged to maintain a healthy lifestyle.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
   { id: 20, text: "I feel motivated and energized at work.", section: "Employee Wellbeing & Happiness", sectionLetter: "B" },
-  
+
   // Section C: Culture & Communication (10 questions)
   { id: 21, text: "Communication between teams is open and transparent.", section: "Culture & Communication", sectionLetter: "C" },
   { id: 22, text: "Employees are encouraged to share ideas freely.", section: "Culture & Communication", sectionLetter: "C" },
@@ -41,7 +41,7 @@ export const surveyQuestions: SurveyQuestion[] = [
   { id: 28, text: "I feel respected by my colleagues.", section: "Culture & Communication", sectionLetter: "C" },
   { id: 29, text: "The organization lives up to its stated mission and values.", section: "Culture & Communication", sectionLetter: "C" },
   { id: 30, text: "I am proud of the organization's culture.", section: "Culture & Communication", sectionLetter: "C" },
-  
+
   // Section D: Growth & Recognition (10 questions)
   { id: 31, text: "My contributions are recognized and appreciated by management.", section: "Growth & Recognition", sectionLetter: "D" },
   { id: 32, text: "I receive feedback that helps me improve my performance.", section: "Growth & Recognition", sectionLetter: "D" },
@@ -53,7 +53,7 @@ export const surveyQuestions: SurveyQuestion[] = [
   { id: 38, text: "The organization invests in employee growth and skill-building.", section: "Growth & Recognition", sectionLetter: "D" },
   { id: 39, text: "My career goals are supported by my manager.", section: "Growth & Recognition", sectionLetter: "D" },
   { id: 40, text: "I see a future for myself in this organization.", section: "Growth & Recognition", sectionLetter: "D" },
-  
+
   // Section E: Inclusion, Diversity & Trust (10 questions)
   { id: 41, text: "Everyone is treated fairly regardless of gender, age, background, or position.", section: "Inclusion, Diversity & Trust", sectionLetter: "E" },
   { id: 42, text: "The workplace is inclusive and respectful to all individuals.", section: "Inclusion, Diversity & Trust", sectionLetter: "E" },

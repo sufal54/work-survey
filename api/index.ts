@@ -10,6 +10,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
             return await login(req, res);
         case path.startsWith('/hr/logout'):
             return await logout(req, res);
+        case path.startsWith('/logout'):
+            return await logout(req, res);
         case path.startsWith('/hr/me'):
             return await me(req, res);
 
